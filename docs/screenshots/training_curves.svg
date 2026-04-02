@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-label="Training curve placeholder">
+  <rect width="1280" height="720" fill="#0b1624"/>
+  <rect x="70" y="70" width="1140" height="580" rx="16" fill="#12253a" stroke="#5ca1ff" stroke-opacity="0.35"/>
+  <polyline fill="none" stroke="#2bedd6" stroke-width="5" points="120,560 220,520 320,490 420,430 520,380 620,340 720,300 820,270 920,250 1020,230 1120,220"/>
+  <polyline fill="none" stroke="#ff8f43" stroke-width="5" points="120,570 220,540 320,525 420,500 520,470 620,440 720,430 820,410 920,400 1020,390 1120,385"/>
+  <text x="120" y="130" fill="#e6f7ff" font-size="42" font-family="Arial">Training Curves Placeholder</text>
+  <text x="120" y="180" fill="#8eb9d8" font-size="24" font-family="Arial">Replace with exported curve screenshots from training outputs</text>
+</svg>
