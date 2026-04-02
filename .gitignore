@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.venv/
+venv/
+.env
+.pytest_cache/
+
+# Model artifacts
+backend/weights/*.pth
+!backend/weights/eye_classifier.pth
+!backend/weights/drowsiness_lstm.pth
+training/outputs/
+
+# Node
+frontend/node_modules/
+frontend/.next/
+
+# OS/editor
+.DS_Store
+.vscode/
+.idea/
