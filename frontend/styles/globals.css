@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-0: #050a14;
+  --bg-1: #0a1830;
+  --bg-2: #0f2c3d;
+  --panel: rgba(7, 19, 34, 0.74);
+  --panel-border: rgba(114, 210, 230, 0.25);
+  --text-main: #ebf6ff;
+  --text-muted: #9bb3cc;
+  --accent: #2bedd6;
+  --accent-2: #5ca1ff;
+  --danger: #ff4d57;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#__next {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  color: var(--text-main);
+  background:
+    radial-gradient(circle at 10% 10%, rgba(46, 237, 214, 0.15), transparent 42%),
+    radial-gradient(circle at 85% 15%, rgba(92, 161, 255, 0.2), transparent 40%),
+    linear-gradient(130deg, var(--bg-0), var(--bg-1) 45%, var(--bg-2));
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--panel-border);
+  backdrop-filter: blur(8px);
+}
+
+.grid-background {
+  background-image:
+    linear-gradient(rgba(132, 184, 255, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(132, 184, 255, 0.1) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.text-muted {
+  color: var(--text-muted);
+}
