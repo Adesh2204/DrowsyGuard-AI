@@ -35,6 +35,15 @@ class EyeStateClassifier(nn.Module):
             return models.resnet50(weights=models.ResNet50_Weights.IMAGENET1K_V2)
         except AttributeError:
             return models.resnet50(pretrained=True)
+        except Exception as exc:
+            warnings.warn(
+                f"Failed to load pretrained ResNet-50 weights ({exc}). Falling back to random init.",
+                RuntimeWarning,
+            )
+            try:
+                return models.resnet50(weights=None)
+            except TypeError:
+                return models.resnet50(pretrained=False)
 
     def freeze_early_layers(self) -> None:
         for param in self.backbone.parameters():
